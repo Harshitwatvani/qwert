@@ -1,0 +1,32 @@
+<h3>User Registeration</h3>
+<div>
+    <div>
+        <label>Title </label>       
+            <input type="text" [(ngModel)]="user.Title"/>           
+        <label>First Name</label>
+            <input type="text" [(ngModel)]="user.FirstName"/>           
+       <label>Last Name</label>
+            <input type="text" [(ngModel)]="user.LastName"/>           
+<br/>   
+            <!-- <label>Gender </label>   <br/>   
+                <input type="radio" name="Gender"> Male
+                <input type="radio" name="Gender"> Female<br/>            -->
+  
+        <label>Email ID</label>
+            <input type="text" [(ngModel)]="user.Email"/><br/>
+        <label>Password</label>
+                  <input type="password" [(ngModel)]="user.Password"/><br/>     
+   
+        <label>Confirm Password</label>        
+            <input type="password"/><br/>
+  
+        <label>Date of Birth</label><br/>
+     
+            <input type="date" [(ngModel)]="user.DOB"/><br/>
+      
+        <label>Phone no.</label>
+                  <input type="text" [(ngModel)]="user.PhoneNo"/>   <br/>    
+        <button  (click)="addUser()" class="btn btn-primary" >Submit</button> 
+        <button (click)="reset()" class="btn btn-info">Reset</button>
+    </div>
+</div>
